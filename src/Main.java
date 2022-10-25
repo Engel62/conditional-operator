@@ -3,7 +3,7 @@ public class Main {
 
         // Задание 1, домашнее задание 1
         System.out.println("Задание 1");
-        int age = 20;
+        int age = 1;
         if (age >= 18) {
             System.out.println("Поздравляем с совершеннолетием!");
         }
@@ -12,7 +12,7 @@ public class Main {
         }
         /// Задание 2
         System.out.println("Задание 2");
-        int childAge = 25;
+        int childAge = 15;
 
         if (childAge <= 7) {
             System.out.println("Ребенок ходит в сад");
@@ -32,7 +32,7 @@ public class Main {
         int wagonCapacity = 102;
         int seatPlace = 60;
         int standigPlace = wagonCapacity - seatPlace;
-        int passenger = 80;
+        int passenger = 150;
         if (passenger <= seatPlace) {
             System.out.println("В вагоне есть сидячие места");
         }
@@ -70,6 +70,50 @@ public class Main {
         } else {
             System.out.println("В вагоне нет мест");
         }
+        /// Задание 8, Задача 1.
+        System.out.println("Задание 8, Задача 1.");
+
+        int menAge = 22;
+         boolean ageKindergarten = 2 <= menAge && menAge <= 6;
+         boolean ageSchool = 7 <= menAge && menAge <= 18;
+         boolean ageUniversity = menAge >= 18 && menAge <= 24;
+         boolean ageWork = menAge > 24;
+
+        if (ageKindergarten)
+            System.out.println("Если возраст человека равен " + menAge + " нужно ходить в детский сад");
+         else if (ageSchool)
+            System.out.println("Если возраст человека равен " + menAge + " нужно ходить в школу");
+        else if (ageUniversity)
+            System.out.println("Если возраст человека равен " + menAge + " нужно ходить в университет");
+         else if(ageWork)
+            System.out.println("Если возраст человека равен " + menAge + " нужно ходить на работу");
+
+        /// Задание 8, Задача 1.
+        System.out.println("Задание 8, Задача 2.");
+        int babyAge = 15;
+        boolean noRide = babyAge < 5;
+        boolean withParentsRide = babyAge > 5 && babyAge <14;
+        boolean withoutParentsRide = babyAge > 14;
+        if (noRide)
+            System.out.println("Если ребенку " + babyAge + " лет, то он не может кататься на аттракционе");
+        else if (withParentsRide)
+            System.out.println("Если ребенку " + babyAge + " лет,то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
+        else if (withoutParentsRide)
+            System.out.println("Если ребенку " + babyAge + " лет,то он может кататься без сопровождения взрослого.");
+        /// Задание 8, Задача 3.
+        System.out.println("Задание 8, Задача 3.");
+        int one = 10;
+        int two = 6;
+        int free = 3;
+        if (one > two && one > free)
+            System.out.println(one);
+        else if (two > one && two > free )
+            System.out.println(two);
+        else if (free > one && free > two)
+            System.out.println(free);
+
+
+
 
     }
 }
